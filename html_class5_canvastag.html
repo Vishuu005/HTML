@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_class5_canvastag.html</title>
+    <style>
+        canvas
+            {
+            border: 1px solid black;
+            }
+    </style>
+</head>
+<body>
+    <h1>canvas tag is used to create controlable graphic and animation.</h1>
+    <canvas id="myCanvas"></canvas>
+    
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle="yellow";
+        ctx.fillRect(20,20,50,50);
+        ctx.fillRect(80,20,50,50);
+        ctx.fillStyle="red";
+        ctx.fillRect(50,80,50,50);
+    </script>
+</body>
+</html>
